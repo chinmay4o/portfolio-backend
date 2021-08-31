@@ -21,7 +21,7 @@ router.post("/f1", async (req, res) => {
   console.log(req.body.name);
 
   try {
-    transporter.sendMail({
+    transport.sendMail({
       to: "chinmayinbox8@gmail.com",
       from: process.env.EMAIL,
       subject: `new portfolio contact`,
